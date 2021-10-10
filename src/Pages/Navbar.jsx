@@ -25,7 +25,7 @@ const Navbar = () => {
 
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <NavLink
                       activeClassName="menu_active"
                       class="nav-link"
@@ -38,6 +38,7 @@ const Navbar = () => {
                   <li class="nav-item">
                     <NavLink
                       activeClassName="menu_active"
+                      aria-current="page"
                       class="nav-link"
                       exact
                       to="/service"
