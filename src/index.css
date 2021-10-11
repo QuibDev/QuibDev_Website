@@ -13,7 +13,7 @@
 
 .navbar-brand {
   font-size: 1.9rem !important;
-  color: #565387 !important;
+  color: #65617d !important;
 }
 
 .navbar a {
@@ -23,11 +23,11 @@
 
 .menu_active {
   font-weight: bold;
-  border-bottom: 1px solid #565387;
+  border-bottom: 1px solid #65617d;
 }
 
 .navbar a:hover {
-  color: #3498db !important;
+  color: #8ab0ff !important;
 }
 
 @media (max-width: 991px) {
@@ -40,6 +40,77 @@
     border-bottom: none;
   }
 }
+
+/*Main Landing section
+-------------------------------------*/
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #65617d;
+}
+
+#header .brand-name {
+  color: #8ab0ff;
+}
+
+#header h2 {
+  color: #9893b5;
+  font-size: 24px;
+}
+
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #8ab0ff;
+  border: 2px solid #8ab0ff;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background: #8ab0ff;
+  color: #fff;
+}
+
+.header-img {
+  text-align: right;
+}
+
+#header .animated {
+  animation: up-down 3s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+/* CONTACT PAGE */
 
 body {
   margin: 0;

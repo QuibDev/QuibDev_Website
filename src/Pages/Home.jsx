@@ -1,5 +1,5 @@
 import React from "react";
-import web from "../images/landing_image_1.svg";
+import web from "../images/HomePage/landing_image_1.svg";
 
 const Home = () => {
   return (
@@ -11,11 +11,11 @@ const Home = () => {
               <div className="row">
                 <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                   <h1>
-                    Grow your business with{" "}
-                    <strong className="brand-name">Quibdev</strong>
+                    Hi, I’m <strong className="brand-name"> Akash</strong>. And
+                    I Like Programming
                   </h1>
                   <h2 className="my-3">
-                    We are the team of talented developer making websites
+                    This website is a digital catalog of my work
                   </h2>
                   <div className="mt3-3">
                     <a href="" classname="btn-get-started">
