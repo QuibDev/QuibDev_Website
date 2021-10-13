@@ -20,8 +20,8 @@ const Home = () => {
         title="Interests"
         subtitle="This website is a digital catalogue of my work"
         imgsrc={interestsImg}
-        visit="/contact"
-        btname="Contact Now"
+        visit="#"
+        btname=""
       />
       <CommonBlockRowRight
         title="Contact"

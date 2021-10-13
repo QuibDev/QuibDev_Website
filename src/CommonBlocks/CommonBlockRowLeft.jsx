@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 const CommonBlockRowLeft = (props) => {
@@ -13,9 +14,7 @@ const CommonBlockRowLeft = (props) => {
                   <h1>{props.title}</h1>
                   <h2 className="my-3">{props.subtitle}</h2>
                   <div className="mt3-3">
-                    <NavLink to={props.visit} classname="btn-get-started">
-                      {props.btname}
-                    </NavLink>
+                    <Button clasname="Common-button">Disabled Button</Button>;
                   </div>
                 </div>
                 <div className="col-lg-6 order-1 order-lg-2 header-img">
