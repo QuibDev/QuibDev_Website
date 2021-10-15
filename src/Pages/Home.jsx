@@ -4,6 +4,8 @@ import interestsImg from "../images/HomePage/landing_image_3.svg";
 import contactImg from "../images/HomePage/landing_image_2.svg";
 import CommonBlockRowLeft from "../CommonBlocks/CommonBlockRowLeft";
 import CommonBlockRowRight from "../CommonBlocks/CommonBlockRowRight";
+import InterestsBlock from "../CommonBlocks/InterestsBlock";
+import ContactMeBlock from "../CommonBlocks/ContactMeBlock";
 
 const Home = () => {
   return (
@@ -13,22 +15,22 @@ const Home = () => {
         I Like Programming"
         subtitle="This website is a digital catalogue of my work"
         imgsrc={introImg}
-        visit="/contact"
-        btname="Contact Now"
       />
-      <CommonBlockRowRight
+      <InterestsBlock
         title="Interests"
-        subtitle="This website is a digital catalogue of my work"
         imgsrc={interestsImg}
         visit="#"
-        btname=""
+        btName1="Data Science"
+        btName2="Machine Learning"
+        btName3="Text Mining"
+        btName4="Arduino"
       />
-      <CommonBlockRowRight
-        title="Contact"
-        subtitle="This website is a digital catalogue of my work"
+      <ContactMeBlock
+        title="Got Questions?"
         imgsrc={contactImg}
         visit="/contact"
-        btname="Contact Now"
+        btName1="Contact Me"
+        btName2="About Page"
       />
     </>
   );
