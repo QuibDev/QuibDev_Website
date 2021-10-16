@@ -41,9 +41,9 @@ const Navbar = () => {
                       aria-current="page"
                       class="nav-link"
                       exact
-                      to="/service"
+                      to="/certificates"
                     >
-                      Services
+                      Certificates
                     </NavLink>
                   </li>
                   <li class="nav-item">
