@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import introImg from "../images/HomePage/landing_image_1.svg";
+import introImg from "../images/HomePage/homepage_image_1.svg";
 import CertificateBlock from "../CommonBlocks/CertificateBlock/CertificateBlock";
 import CommonBlockRowLeft from "../CommonBlocks/CommonBlockRowLeft";
 import certificate1 from "../images/Certificates/Building Arduino Robots And Devices Coursera Certificate.png";
@@ -13,42 +13,47 @@ const sData = [
   {
     title: "Building Arduino Robots And Devices",
     imgsrc: certificate1,
-    btName1: "Verify Certificate",
-    btName2: "Course Page",
-    btnVisit1: "",
-    btnVisit2: "",
+    btName1: "Course Page",
+    btName2: "Verify",
+    btnVisit1: "https://www.coursera.org/learn/arduino",
+    btnVisit2:
+      "https://www.coursera.org/account/accomplishments/verify/YSJ8UA3A3CHW",
   },
   {
     title: "Programming Fundamentals",
     imgsrc: certificate2,
-    btName1: "Verify Certificate",
-    btName2: "Course Page",
-    btnVisit1: "",
-    btnVisit2: "",
+    btName1: "Course Page",
+    btName2: "Verify",
+    btnVisit1: "https://www.coursera.org/learn/programming-fundamentals",
+    btnVisit2:
+      "https://www.coursera.org/account/accomplishments/records/56PUBJK2JUDC",
   },
   {
     title: "Data Science In Python",
     imgsrc: certificate3,
-    btName1: "Verify Certificate",
-    btName2: "Course Page",
-    btnVisit1: "",
-    btnVisit2: "",
+    btName1: "Course Page",
+    btName2: "Verify",
+    btnVisit1: "https://www.coursera.org/learn/python-data-analysis",
+    btnVisit2:
+      "https://www.coursera.org/account/accomplishments/verify/Q2V34B49AQDJ",
   },
   {
     title: "Applied Machine Learning In Python",
     imgsrc: certificate4,
-    btName1: "Verify Certificate",
-    btName2: "Course Page",
-    btnVisit1: "",
-    btnVisit2: "",
+    btName1: "Course Page",
+    btName2: "Verify",
+    btnVisit1: "https://www.coursera.org/learn/python-machine-learning",
+    btnVisit2:
+      "https://www.coursera.org/account/accomplishments/verify/PT9TZ62SB37C",
   },
   {
     title: "Applied Text Mining In Python",
     imgsrc: certificate5,
-    btName1: "Verify Certificate",
-    btName2: "Course Page",
-    btnVisit1: "",
-    btnVisit2: "",
+    btName1: "Course Page",
+    btName2: "Verify",
+    btnVisit1: "https://www.coursera.org/learn/python-text-mining",
+    btnVisit2:
+      "https://www.coursera.org/account/accomplishments/verify/TW2WJJCLDNXB",
   },
 ];
 
@@ -71,6 +76,15 @@ const ButtonPrimary = styled.button`
 `;
 
 const Certificates = () => {
+  const aboutCertificateBlock = {
+    flexDirection: "column",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    marginBottom: 20,
+  };
+
   return (
     <>
       <h1
@@ -81,7 +95,7 @@ const Certificates = () => {
           textAlign: "center",
           fontFamily: "Ubuntu",
           fontWeight: "bold",
-          Color: "#65617d",
+          color: "#65617d",
           marginTop: 30,
         }}
       >
@@ -99,32 +113,12 @@ const Certificates = () => {
           />
         );
       })}
-      <div
-        style={{
-          flexDirection: "column",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlign: "center",
-          marginBottom: 20,
-        }}
-      >
+      <div style={aboutCertificateBlock}>
         <CommonBlockRowLeft
           title="What do these certificates mean?"
           subtitle="These certificates are a token of the fields I have dabbled in. – A “learning timeline” if you will. Those interested in what I actually learn throughout my journey can check out the Projects section of the website."
           imgsrc={introImg}
         />
-        <ButtonPrimary
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            marginBottom: 20,
-          }}
-        >
-          Go Back
-        </ButtonPrimary>
       </div>
     </>
   );

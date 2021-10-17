@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-//import contactImg from "../images/Contact/contact_image.svg";
-import introImg from "../images/HomePage/landing_image_1.svg";
+import contactImg from "../images/Contact/contact_image.png";
 import { Grid, Row, Col } from "react-bootstrap";
 
 const ButtonPrimary = styled.button`
@@ -32,7 +31,7 @@ const Contact = () => {
               <div className="row">
                 <div className="col-md-6 pt-5 pt-lg-0 order-1 order-lg-1 d-flex justify-content-center flex-column">
                   <img
-                    src={introImg}
+                    src={contactImg}
                     className="img-fluid animated"
                     alt="CommonBlockRowRight img"
                   />

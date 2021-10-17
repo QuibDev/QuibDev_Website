@@ -12,25 +12,82 @@ import {
 } from "../../src/Components/NavbarElements";
 
 const Navbar = () => {
+  const navLinkInactive = {
+    fontSize: 26,
+    fontFamily: "Ubuntu",
+    color: "#65617d",
+    hoverColor: "#383549",
+  };
+  const navLinkActive = {
+    fontSize: 26,
+    fontFamily: "Ubuntu",
+    color: "#383549",
+  };
+
+  const navbtnText = {
+    fontSize: 26,
+    fontFamily: "Ubuntu",
+    fontWeight: "bold",
+    color: "white",
+  };
+
   return (
     <>
       <Nav>
         <Bars />
-        <NavLink class="navHeader" exact to="/">
-          QuibDev
+        <NavLink style={{ flex: 1 }} exact to="/">
+          <h1
+            style={{
+              fontSize: 36,
+              fontWeight: "bold",
+              fontStyle: "oblique",
+              color: "#817e94",
+              marginRight: 5,
+            }}
+          >
+            //
+          </h1>
+          <h1
+            style={{
+              fontSize: 36,
+              fontWeight: "bold",
+              fontStyle: "oblique",
+              color: "#65617d",
+            }}
+          >
+            Quib
+          </h1>
+          <h1
+            style={{
+              fontSize: 36,
+              fontWeight: "bold",
+              fontStyle: "oblique",
+              color: "#8ab0ff",
+            }}
+          >
+            dev
+          </h1>
         </NavLink>
         <NavMenu>
           <NavLink to="/About" activeStyle>
-            About
+            <h1 style={navLinkInactive} activeStyle={navLinkActive}>
+              About
+            </h1>
           </NavLink>
           <NavLink to="/Certificates" activeStyle>
-            certificates
+            <h1 style={navLinkInactive} activeStyle={navLinkActive}>
+              Certificates
+            </h1>
           </NavLink>
           <NavLink to="/Work" activeStyle>
-            Work
+            <h1 style={navLinkInactive} activeStyle={navLinkActive}>
+              Work
+            </h1>
           </NavLink>
           <NavBtn>
-            <NavBtnLink to="/contact">Contact</NavBtnLink>
+            <NavBtnLink to="/contact">
+              <h1 style={navbtnText}>Contact</h1>
+            </NavBtnLink>
           </NavBtn>
         </NavMenu>
       </Nav>

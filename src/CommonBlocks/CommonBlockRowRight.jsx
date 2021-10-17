@@ -12,12 +12,18 @@ const CommonBlockRowRight = (props) => {
         <div class="container-fluid">
           <Row>
             <div className="col-10 mx-auto">
-              <div className="row">
+              <div
+                className="row"
+                style={{
+                  alignItems: "center",
+                }}
+              >
                 <div className="col-md-6 pt-5 pt-lg-0 order-1 order-lg-1 d-flex justify-content-center flex-column">
                   <img
                     src={props.imgsrc}
                     className="img-fluid animated"
                     alt="CommonBlockRowRight img"
+                    style={{ maxHeight: 500, maxWidth: 500 }}
                   />
                 </div>
                 <div className="col-lg-6 order-2 order-lg-2 header-img justify-content-right">

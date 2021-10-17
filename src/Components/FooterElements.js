@@ -4,13 +4,13 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background: #fff;
-  height: 125px;
+  height: 55px;
   display: flex;
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
   /* Third Nav */
-  justify-content: flex-end;
+  justify-content: center;
 `;
 
 export const navHeader = styled(Link)`
