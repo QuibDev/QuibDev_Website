@@ -37,19 +37,30 @@ const Contact = () => {
                     alt="CommonBlockRowRight img"
                   />
                 </div>
-                <div className="col-lg-6 order-2 order-lg-2 header-img justify-content-right">
-                  <h1>Let's Get In Touch!</h1>
+                <div className="col-lg-6 order-2 order-lg-2 header-img justify-content-left">
+                  <h1
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      paddingBottom: 25,
+                    }}
+                  >
+                    Let's Get In Touch!
+                  </h1>
                   <div className="container contact_div">
                     <div className="row">
-                      <div className="col-md-6 col-10 mx-auto">
+                      <div className="col-md-10 col-10 mx-auto">
                         <form>
-                          <div class="mb-3">
-                            <label
-                              for="exampleFormControlInput1"
-                              class="form-label"
-                            >
-                              Name
-                            </label>
+                          <div
+                            class="mb-3"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              paddingTop: 10,
+                            }}
+                          >
                             <input
                               type="name"
                               class="form-control"
@@ -57,13 +68,15 @@ const Contact = () => {
                               placeholder="John Doe"
                             />
                           </div>
-                          <div class="mb-3">
-                            <label
-                              for="exampleFormControlInput1"
-                              class="form-label"
-                            >
-                              Email address
-                            </label>
+                          <div
+                            class="mb-3"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              paddingTop: 10,
+                            }}
+                          >
                             <input
                               type="email"
                               class="form-control"
@@ -71,13 +84,15 @@ const Contact = () => {
                               placeholder="johnDoe@example.com"
                             />
                           </div>
-                          <div class="mb-3">
-                            <label
-                              for="exampleFormControlInput1"
-                              class="form-label"
-                            >
-                              Organization
-                            </label>
+                          <div
+                            class="mb-3"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              paddingTop: 10,
+                            }}
+                          >
                             <input
                               type="oragnization"
                               class="form-control"
@@ -85,13 +100,15 @@ const Contact = () => {
                               placeholder="John Doe Co. Ltd"
                             />
                           </div>
-                          <div class="mb-3">
-                            <label
-                              for="exampleFormControlTextarea1"
-                              class="form-label"
-                            >
-                              Your Message
-                            </label>
+                          <div
+                            class="mb-3"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              paddingTop: 10,
+                            }}
+                          >
                             <textarea
                               class="form-control"
                               id="exampleFormControlTextarea1"

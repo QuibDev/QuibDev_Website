@@ -75,6 +75,8 @@ const CertificateBlock = (props) => {
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
+                      textAlign: "center",
+                      marginBottom: 20,
                     }}
                   >
                     {props.title}

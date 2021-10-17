@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import introImg from "../images/HomePage/landing_image_1.svg";
 import CertificateBlock from "../CommonBlocks/CertificateBlock/CertificateBlock";
 import CommonBlockRowLeft from "../CommonBlocks/CommonBlockRowLeft";
@@ -51,9 +52,41 @@ const sData = [
   },
 ];
 
+const ButtonPrimary = styled.button`
+  background-color: #8ab0ff;
+  font: 700 26px Ubuntu;
+  color: white;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 30px;
+  border-width: 0px;
+  outline-color: #77a0ff;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 4px lightgray;
+  cursor: pointer;
+  transition: ease background-color 300ms;
+  &:hover {
+    background-color: #77a0ff;
+  }
+`;
+
 const Certificates = () => {
   return (
     <>
+      <h1
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          fontFamily: "Ubuntu",
+          fontWeight: "bold",
+          Color: "#65617d",
+          marginTop: 30,
+        }}
+      >
+        Certificates
+      </h1>
       {sData.map((val, ind) => {
         return (
           <CertificateBlock
@@ -66,6 +99,33 @@ const Certificates = () => {
           />
         );
       })}
+      <div
+        style={{
+          flexDirection: "column",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          marginBottom: 20,
+        }}
+      >
+        <CommonBlockRowLeft
+          title="What do these certificates mean?"
+          subtitle="These certificates are a token of the fields I have dabbled in. – A “learning timeline” if you will. Those interested in what I actually learn throughout my journey can check out the Projects section of the website."
+          imgsrc={introImg}
+        />
+        <ButtonPrimary
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+            marginBottom: 20,
+          }}
+        >
+          Go Back
+        </ButtonPrimary>
+      </div>
     </>
   );
 };

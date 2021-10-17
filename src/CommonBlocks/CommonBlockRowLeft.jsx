@@ -12,8 +12,27 @@ const CommonBlockRowLeft = (props) => {
             <div className="col-10 mx-auto">
               <div className="row">
                 <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-                  <h1>{props.title}</h1>
-                  <h2 className="my-3">{props.subtitle}</h2>
+                  <h1
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      textAlign: "center",
+                    }}
+                  >
+                    {props.title}
+                  </h1>
+                  <h2
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      textAlign: "center",
+                    }}
+                    className="my-3"
+                  >
+                    {props.subtitle}
+                  </h2>
                 </div>
                 <div className="col-lg-6 order-1 order-lg-2 header-img">
                   <img
