@@ -24,13 +24,18 @@ const Home = () => {
         btName2="Machine Learning"
         btName3="Text Mining"
         btName4="Arduino"
+        btVisit1="/work"
+        btVisit2="/work"
+        btVisit3="/work"
+        btVisit4="/work"
       />
       <ContactMeBlock
         title="Got Questions?"
         imgsrc={contactImg}
-        visit="/contact"
         btName1="Contact Me"
+        btVisit1="/contact"
         btName2="About Page"
+        btVisit2="/about"
       />
     </>
   );

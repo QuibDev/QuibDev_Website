@@ -1,8 +1,6 @@
 import React from "react";
 import CommonBlockRowLeft from "../CommonBlocks/CommonBlockRowLeft";
-import CommonBlockRowRight from "../CommonBlocks/CommonBlockRowRight";
 import aboutMe from "../images/HomePage/homepage_image_2.svg";
-import interest from "../images/HomePage/homepage_image_1.svg";
 
 const About = () => {
   return (

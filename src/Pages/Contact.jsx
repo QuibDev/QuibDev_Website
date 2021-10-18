@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import contactImg from "../images/Contact/contact_image.png";
 import { Grid, Row, Col } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const ButtonPrimary = styled.button`
   background-color: #8ab0ff;
@@ -22,6 +23,13 @@ const ButtonPrimary = styled.button`
 `;
 
 const Contact = () => {
+  const alignCenter = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingTop: 10,
+  };
+
   return (
     <>
       <section id="header" className="d-flex align-items-center">
@@ -51,15 +59,7 @@ const Contact = () => {
                     <div className="row">
                       <div className="col-md-10 col-10 mx-auto">
                         <form>
-                          <div
-                            class="mb-3"
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                              paddingTop: 10,
-                            }}
-                          >
+                          <div class="mb-3" style={alignCenter}>
                             <input
                               type="name"
                               class="form-control"
@@ -67,15 +67,7 @@ const Contact = () => {
                               placeholder="John Doe"
                             />
                           </div>
-                          <div
-                            class="mb-3"
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                              paddingTop: 10,
-                            }}
-                          >
+                          <div class="mb-3" style={alignCenter}>
                             <input
                               type="email"
                               class="form-control"
@@ -83,15 +75,7 @@ const Contact = () => {
                               placeholder="johnDoe@example.com"
                             />
                           </div>
-                          <div
-                            class="mb-3"
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                              paddingTop: 10,
-                            }}
-                          >
+                          <div class="mb-3" style={alignCenter}>
                             <input
                               type="oragnization"
                               class="form-control"
@@ -99,15 +83,7 @@ const Contact = () => {
                               placeholder="John Doe Co. Ltd"
                             />
                           </div>
-                          <div
-                            class="mb-3"
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                              paddingTop: 10,
-                            }}
-                          >
+                          <div class="mb-3" style={alignCenter}>
                             <textarea
                               class="form-control"
                               id="exampleFormControlTextarea1"
@@ -115,18 +91,12 @@ const Contact = () => {
                               rows="3"
                             ></textarea>
                           </div>
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                              paddingTop: 10,
-                            }}
-                            class="col-12"
-                          >
-                            <ButtonPrimary type="submit">
-                              Submit form
-                            </ButtonPrimary>
+                          <div style={alignCenter} class="col-12">
+                            <NavLink exact to="/success">
+                              <ButtonPrimary type="submit">
+                                Submit form
+                              </ButtonPrimary>
+                            </NavLink>
                           </div>
                         </form>
                       </div>

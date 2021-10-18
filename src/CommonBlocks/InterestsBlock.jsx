@@ -86,8 +86,12 @@ const InterestsBlock = (props) => {
                       alignItems: "center",
                     }}
                   >
-                    <ButtonPrimary>{props.btName1}</ButtonPrimary>
-                    <ButtonSecondary>{props.btName2}</ButtonSecondary>
+                    <NavLink exact to={props.btVisit1}>
+                      <ButtonPrimary>{props.btName1}</ButtonPrimary>
+                    </NavLink>
+                    <NavLink exact to={props.btVisit2}>
+                      <ButtonSecondary>{props.btName2}</ButtonSecondary>
+                    </NavLink>
                   </div>
                   <div
                     style={{
@@ -96,8 +100,12 @@ const InterestsBlock = (props) => {
                       alignItems: "center",
                     }}
                   >
-                    <ButtonPrimary>{props.btName3}</ButtonPrimary>
-                    <ButtonPrimary>{props.btName4}</ButtonPrimary>
+                    <NavLink exact to={props.btVisit3}>
+                      <ButtonPrimary>{props.btName3}</ButtonPrimary>
+                    </NavLink>
+                    <NavLink exact to={props.btVisit4}>
+                      <ButtonPrimary>{props.btName4}</ButtonPrimary>
+                    </NavLink>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import introImg from "../images/HomePage/homepage_image_1.svg";
+import AboutCertificateImg from "../images/Certificates/AboutCertificate.png";
 import CertificateBlock from "../CommonBlocks/CertificateBlock/CertificateBlock";
 import CommonBlockRowLeft from "../CommonBlocks/CommonBlockRowLeft";
 import certificate1 from "../images/Certificates/Building Arduino Robots And Devices Coursera Certificate.png";
@@ -117,7 +117,7 @@ const Certificates = () => {
         <CommonBlockRowLeft
           title="What do these certificates mean?"
           subtitle="These certificates are a token of the fields I have dabbled in. – A “learning timeline” if you will. Those interested in what I actually learn throughout my journey can check out the Projects section of the website."
-          imgsrc={introImg}
+          imgsrc={AboutCertificateImg}
         />
       </div>
     </>
