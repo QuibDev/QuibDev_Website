@@ -6,7 +6,6 @@ import {
   NavLink,
   Bars,
   NavMenu,
-  navHeader,
   NavBtn,
   NavBtnLink,
 } from "../../src/Components/NavbarElements";
@@ -16,7 +15,6 @@ const Navbar = () => {
     fontSize: 26,
     fontFamily: "Ubuntu",
     color: "#65617d",
-    hoverColor: "#383549",
   };
   const navLinkActive = {
     fontSize: 26,
@@ -31,42 +29,28 @@ const Navbar = () => {
     color: "white",
   };
 
+  const headerStyleSecondary = {
+    fontSize: 36,
+    fontWeight: "bold",
+    fontStyle: "oblique",
+    color: "#65617d",
+  };
+
+  const headerStylePrimary = {
+    fontSize: 36,
+    fontWeight: "bold",
+    fontStyle: "oblique",
+    color: "#8ab0ff",
+  };
+
   return (
     <>
       <Nav>
         <Bars />
         <NavLink style={{ flex: 1 }} exact to="/">
-          <h1
-            style={{
-              fontSize: 36,
-              fontWeight: "bold",
-              fontStyle: "oblique",
-              color: "#817e94",
-              marginRight: 5,
-            }}
-          >
-            //
-          </h1>
-          <h1
-            style={{
-              fontSize: 36,
-              fontWeight: "bold",
-              fontStyle: "oblique",
-              color: "#65617d",
-            }}
-          >
-            Quib
-          </h1>
-          <h1
-            style={{
-              fontSize: 36,
-              fontWeight: "bold",
-              fontStyle: "oblique",
-              color: "#8ab0ff",
-            }}
-          >
-            dev
-          </h1>
+          <h1 style={headerStyleSecondary}>//</h1>
+          <h1 style={headerStyleSecondary}>Quib</h1>
+          <h1 style={headerStylePrimary}>dev</h1>
         </NavLink>
         <NavMenu>
           <NavLink to="/About" activeStyle>

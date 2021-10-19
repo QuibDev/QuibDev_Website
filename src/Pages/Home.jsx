@@ -3,7 +3,6 @@ import introImg from "../images/HomePage/homepage_image_1.svg";
 import interestsImg from "../images/HomePage/homepage_image_2.svg";
 import contactImg from "../images/HomePage/homepage_image_3.png";
 import CommonBlockRowLeft from "../CommonBlocks/CommonBlockRowLeft";
-import CommonBlockRowRight from "../CommonBlocks/CommonBlockRowRight";
 import InterestsBlock from "../CommonBlocks/InterestsBlock";
 import ContactMeBlock from "../CommonBlocks/ContactMeBlock";
 

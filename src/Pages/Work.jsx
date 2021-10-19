@@ -152,8 +152,6 @@ const Work = () => {
                     title={val.title}
                     subtitle={val.subtitle}
                     imgsrc={val.imgsrc}
-                    btName={val.btName}
-                    btVisit={val.btVisit}
                   />
                 );
               })}

@@ -1,9 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-//import certificate1 from "../../images/Certificates/text-mining-coursera-certificate.jpg";
-
-import { Grid, Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 const ButtonPrimary = styled.button`
   background-color: #8ab0ff;
@@ -13,7 +10,6 @@ const ButtonPrimary = styled.button`
   margin: 10px;
   border-radius: 30px;
   border-width: 0px;
-  outline-color: #77a0ff;
   text-transform: uppercase;
   box-shadow: 0px 4px 4px lightgray;
   cursor: pointer;
@@ -30,7 +26,6 @@ const ButtonSecondary = styled.button`
   padding: 15px 25px;
   border-radius: 30px;
   border-width: 0px;
-  outline-color: #77a0ff;
   text-transform: uppercase;
   box-shadow: 0px 4px 4px lightgray;
   cursor: pointer;
@@ -88,8 +83,12 @@ const CertificateBlock = (props) => {
                       alignItems: "center",
                     }}
                   >
-                    <ButtonPrimary>{props.btName1}</ButtonPrimary>
-                    <ButtonSecondary>{props.btName2}</ButtonSecondary>
+                    <a href={props.btVisit1} target="_blank">
+                      <ButtonPrimary>{props.btName1}</ButtonPrimary>
+                    </a>
+                    <a href={props.btVisit2} target="_blank">
+                      <ButtonSecondary>{props.btName2}</ButtonSecondary>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -25,17 +25,23 @@ const Footer = () => {
   return (
     <>
       <Nav>
-        <NavLink to="https://github.com/quibdev" activeStyle>
-          <FaGithub style={socialIcons} href="https://github.com/quibdev/" />
+        <NavLink to="#" activeStyle>
+          <a href="https://github.com/quibdev" target="_blank">
+            <FaGithub style={socialIcons} href="https://github.com/quibdev/" />
+          </a>
         </NavLink>
-        <NavLink
-          to="https://www.linkedin.com/in/akash-patel-24897121a/"
-          activeStyle
-        >
-          <FaLinkedin style={socialIcons} />
+        <NavLink to="#" activeStyle>
+          <a
+            href="https://www.linkedin.com/in/akash-patel-24897121a/"
+            target="_blank"
+          >
+            <FaLinkedin style={socialIcons} />
+          </a>
         </NavLink>
-        <NavLink to="https://twitter.com/quibdev" activeStyle>
-          <FaTwitter style={socialIcons} />
+        <NavLink to="#" activeStyle>
+          <a href="https://twitter.com/quibdev" target="_blank">
+            <FaTwitter style={socialIcons} />
+          </a>
         </NavLink>
       </Nav>
       <Nav>

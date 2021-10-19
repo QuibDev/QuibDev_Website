@@ -15,8 +15,8 @@ const sData = [
     imgsrc: certificate1,
     btName1: "Course Page",
     btName2: "Verify",
-    btnVisit1: "https://www.coursera.org/learn/arduino",
-    btnVisit2:
+    btVisit1: "https://www.coursera.org/learn/arduino",
+    btVisit2:
       "https://www.coursera.org/account/accomplishments/verify/YSJ8UA3A3CHW",
   },
   {
@@ -24,8 +24,8 @@ const sData = [
     imgsrc: certificate2,
     btName1: "Course Page",
     btName2: "Verify",
-    btnVisit1: "https://www.coursera.org/learn/programming-fundamentals",
-    btnVisit2:
+    btVisit1: "https://www.coursera.org/learn/programming-fundamentals",
+    btVisit2:
       "https://www.coursera.org/account/accomplishments/records/56PUBJK2JUDC",
   },
   {
@@ -33,8 +33,8 @@ const sData = [
     imgsrc: certificate3,
     btName1: "Course Page",
     btName2: "Verify",
-    btnVisit1: "https://www.coursera.org/learn/python-data-analysis",
-    btnVisit2:
+    btVisit1: "https://www.coursera.org/learn/python-data-analysis",
+    btVisit2:
       "https://www.coursera.org/account/accomplishments/verify/Q2V34B49AQDJ",
   },
   {
@@ -42,8 +42,8 @@ const sData = [
     imgsrc: certificate4,
     btName1: "Course Page",
     btName2: "Verify",
-    btnVisit1: "https://www.coursera.org/learn/python-machine-learning",
-    btnVisit2:
+    btVisit1: "https://www.coursera.org/learn/python-machine-learning",
+    btVisit2:
       "https://www.coursera.org/account/accomplishments/verify/PT9TZ62SB37C",
   },
   {
@@ -51,8 +51,8 @@ const sData = [
     imgsrc: certificate5,
     btName1: "Course Page",
     btName2: "Verify",
-    btnVisit1: "https://www.coursera.org/learn/python-text-mining",
-    btnVisit2:
+    btVisit1: "https://www.coursera.org/learn/python-text-mining",
+    btVisit2:
       "https://www.coursera.org/account/accomplishments/verify/TW2WJJCLDNXB",
   },
 ];
@@ -107,9 +107,9 @@ const Certificates = () => {
             title={val.title}
             imgsrc={val.imgsrc}
             btName1={val.btName1}
-            btnVisit1={val.btnVisit1}
+            btVisit1={val.btVisit1}
             btName2={val.btName2}
-            btnVisit2={val.btnVisit2}
+            btVisit2={val.btVisit2}
           />
         );
       })}

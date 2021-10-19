@@ -66,9 +66,11 @@ const TitleCard = (props) => {
             <p class="card-text" style={cardSubtitle}>
               {props.subtitle}
             </p>
-            <NavLink exact to={props.btVisit}>
-              <ButtonPrimary>{props.btName}</ButtonPrimary>
-            </NavLink>
+            {props.btName && (
+              <NavLink exact to={props.btVisit}>
+                <ButtonPrimary>{props.btName}</ButtonPrimary>
+              </NavLink>
+            )}
           </div>
         </div>
       </div>
